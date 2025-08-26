@@ -10,9 +10,19 @@
 </head>
 
 <body class="bg-light">
-    <div class="container py-5">
-        <h1 class="text-center mb-4 fw-bold">Scroll Infinito con HTMX y Flask</h1>
+    <nav class="navbar navbar-expand-lg bg-danger fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold" href="#">
+                Scroll Infinito con HTMX y Flask
+            </a>
+            <!-- Contador centrado en la barra de navegación -->
+            <div class="mx-auto">
+                <span class="badge bg-success text-white fs-6 fw-bold" id="counter">0 Items</span>
+            </div>
+        </div>
+    </nav>
 
+    <div class="container py-5 mt-5">
         <!-- Contenedor donde se irán insertando los elementos dinámicamente -->
         <div id="items" class="d-grid gap-3"></div>
 

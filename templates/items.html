@@ -1,7 +1,10 @@
+<span class="badge bg-success text-white fs-6 fw-bold" id="counter" hx-swap-oob="true">{{ total_cargados }} Items</span>
+
 {% for item in items %}
-<div class="card border-primary mb-3">
+<div class="card mb-3 border-0 shadow-sm">
     <div class="card-body">
-        <p class="card-text fw-semibold text-primary mb-0">{{ item }}</p>
+        <p class="card-text fw-semibold text-dark mb-0 fs-5">{{ item }}</p>
+        <p class="card-text text-muted">Aqui va el contenido del item, es un texto de ejemplo. Hola mundo..!</p>
     </div>
 </div>
 {% endfor %}
