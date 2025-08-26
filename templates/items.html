@@ -6,13 +6,20 @@
 </div>
 {% endfor %}
 
+
 {% if has_more %}
-<!-- Sentinel que se revela al hacer scroll y se REEMPLAZA a sí mismo -->
+<!-- hx-get="/load-items/{{ next_start }}": hace petición GET con la siguiente posición de inicio -->
+<!-- hx-trigger="revealed": se activa cuando el elemento se hace visible en pantalla -->
+<!-- hx-swap="outerHTML": reemplaza todo el div (incluyendo el div mismo) -->
+<!-- hx-indicator=".spinner": muestra el spinner con clase "spinner" mientras carga -->
+<!-- class="text-center py-3": centra el contenido y agrega padding vertical -->
 <div hx-get="/load-items/{{ next_start }}" hx-trigger="revealed" hx-swap="outerHTML" hx-indicator=".spinner"
     class="text-center py-3">
+    <!-- Spinner de Bootstrap que se muestra mientras carga más elementos -->
     <div class="spinner-border spinner" role="status" aria-label="Cargando"></div>
 </div>
 {% else %}
+<!-- Se muestra cuando no hay más elementos para cargar -->
 <div class="text-center py-3 text-muted fst-italic">
     No hay más items para cargar.
 </div>
