@@ -1,8 +1,11 @@
-# 📜 Scroll Infinito con HTMX y Python Flask
+# Scroll Infinito con Python + Flask + HTMX
 
 ## 🎯 ¿Qué hace este proyecto?
 
 Este proyecto demuestra cómo crear un **scroll infinito** (carga automática de contenido al hacer scroll) usando **HTMX** (HyperText Markup Language eXtended) y **Python Flask**. Es una implementación moderna y eficiente que no requiere JavaScript complejo.
+
+### Resultado Final 😲
+![Resultado Final](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/refs/heads/master/scroll-infinito-con-Python-Flask-y-HTMX.gif)
 
 ## ✨ Características principales
 
@@ -44,22 +47,12 @@ scroll-infinito-con-HTMX-Python-Flask/
 - HTMX automáticamente hace una nueva petición para cargar más elementos
 - El proceso se repite hasta que no hay más elementos
 
-## 🛠️ Tecnologías utilizadas
-
-- **Backend**: Python Flask 3.1.2
-- **Frontend**: HTMX 1.9.12, Bootstrap 5.3.3
-- **Templates**: Jinja2
-- **Estilos**: CSS personalizado
-- **Demo**: https://htmx.org/examples/infinite-scroll/
-
-
-
 ## 🚀 Instalación y ejecución
 
 ### 1. **Clonar o descargar el proyecto**
 ```bash
-git clone <url-del-repositorio>
-cd scroll-infinito-con-HTMX-Python-Flask
+git clone <https://github.com/urian121/scroll-infinito-con-HTMX-y-Flask.git>
+cd scroll-infinito-con-HTMX-y-Flask
 ```
 
 ### 2. **Crear un entorno virtual** (recomendado)
@@ -106,19 +99,9 @@ En `app.py`, modifica la lista `ITEMS`:
 ITEMS = [f"Item {i}" for i in range(1, 101)]  # 100 elementos en lugar de 50
 ```
 
-### **Personalizar estilos**
-Edita `static/home.css` para cambiar colores, fuentes, etc.
-
 ### **Modificar el diseño de las tarjetas**
 Edita `templates/items.html` para cambiar cómo se muestran los elementos.
 
-## 🎨 Personalización visual
-
-El proyecto incluye:
-- **Bootstrap 5**: Para un diseño moderno y responsive
-- **HTMX**: Para funcionalidades avanzadas sin JavaScript
-- **CSS personalizado**: Para estilos únicos
-- **Indicadores de carga**: Spinners animados durante la carga
 
 ## 🔍 Conceptos clave explicados
 
@@ -136,37 +119,22 @@ Un sentinel es un elemento HTML que actúa como "detector" para saber cuándo ca
 5. Se coloca un nuevo sentinel
 6. El proceso se repite
 
-## 🐛 Solución de problemas
-
-### **La aplicación no se ejecuta**
-- Verifica que Python esté instalado: `python --version`
-- Asegúrate de que el entorno virtual esté activado
-- Revisa que todas las dependencias estén instaladas
-
-### **No se cargan más elementos**
-- Verifica la consola del navegador para errores
-- Asegúrate de que HTMX esté cargando correctamente
-- Revisa que la ruta `/load-items/<start>` esté funcionando
-
-### **Problemas de estilo**
-- Verifica que Bootstrap esté cargando
-- Revisa que `home.css` esté en la carpeta `static`
 
 ## 📚 Recursos adicionales
 
 - [Documentación oficial de HTMX](https://htmx.org/docs/)
+- [Documentación de scroll infinito con HTMX](https://htmx.org/examples/infinite-scroll/)
 - [Documentación oficial de Flask](https://flask.palletsprojects.com/)
-- [Documentación de Bootstrap 5](https://getbootstrap.com/docs/5.3/)
-
-## 🤝 Contribuciones
-
-Si quieres mejorar este proyecto:
-1. Haz un fork del repositorio
-2. Crea una rama para tu feature
-3. Haz commit de tus cambios
-4. Crea un pull request
 
 
+## 🙌 Cómo puedes apoyar 📢:
+✨ **Comparte este proyecto** con otros desarrolladores para que puedan beneficiarse 📢.
+☕ **Invítame un café o una cerveza 🍺**:
+   - [Paypal](https://www.paypal.me/iamdeveloper86) (`iamdeveloper86@gmail.com`).
 
-**¡Disfruta explorando el scroll infinito con HTMX y Flask! 🎉**
+### ⚡ ¡No olvides SUSCRIBIRTE a la [Comunidad WebDeveloper](https://www.youtube.com/WebDeveloperUrianViera?sub_confirmation=1)!
+
+#### ⭐ **Déjanos una estrella en GitHub**:
+   - Dicen que trae buena suerte 🍀.
+**Gracias por tu apoyo 🤓.**
 
