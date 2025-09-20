@@ -124,7 +124,6 @@ Un sentinel es un elemento HTML que actúa como "detector" para saber cuándo ca
 
 - [Documentación oficial de HTMX](https://htmx.org/docs/)
 - [Documentación de scroll infinito con HTMX](https://htmx.org/examples/infinite-scroll/)
-- [Documentación oficial de Flask](https://flask.palletsprojects.com/)
 
 
 ## 🙌 Cómo puedes apoyar 📢:
